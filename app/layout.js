@@ -1,3 +1,4 @@
+import ConvexClientProvider from "./ConvexClientProvider";
 import "./globals.css";
 import Provider from "./Provider";
 import { Outfit } from "next/font/google";
@@ -16,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html>
       <body className={outfit.className}>
-        <Provider>{children}</Provider>
+        <ConvexClientProvider>{children}</ConvexClientProvider>
       </body>
     </html>
   );
